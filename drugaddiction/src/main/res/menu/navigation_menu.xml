@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+
+    <item android:title="Drug Addiction">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/home"
+                    android:icon="@drawable/ic_book_black_24dp"
+                    android:title="Home"/>
+
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Gernal">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_person_outline_black_24dp"
+                android:title="Profile" />
+
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="LogOut" />
+        </menu>
+    </item>
+
+</menu>

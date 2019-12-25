@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/take_Photo"
+        android:icon="@drawable/ic_camera"
+        android:title="Take Photo" />
+
+    <item
+        android:id="@+id/select_From_Gellery"
+        android:icon="@drawable/ic_gellery"
+        android:title="Select form Gellery " />
+
+
+
+
+
+</menu>

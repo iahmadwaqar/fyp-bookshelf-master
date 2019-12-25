@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "533971811288",
+    "firebase_url": "https://drugaddiction-f02b0.firebaseio.com",
+    "project_id": "drugaddiction-f02b0",
+    "storage_bucket": "drugaddiction-f02b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533971811288:android:b40cc23217ddddb8b490ad",
+        "android_client_info": {
+          "package_name": "com.shinwari.registertion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533971811288-id3414epbr5d8s3v04h66sqhj85auhp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shinwari.registertion",
+            "certificate_hash": "30229d66a113e51fd6ef62e8667fe7142bfe529b"
+          }
+        },
+        {
+          "client_id": "533971811288-762q8ra40u6mkg0g3pqis6mo1ds51dl3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV9xg_d5AhVpNzvot7N6Iwz6J8YVR25Y0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533971811288-762q8ra40u6mkg0g3pqis6mo1ds51dl3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

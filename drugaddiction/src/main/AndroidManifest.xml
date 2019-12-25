@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shinwari.registertion">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".More.MoreBidOwner" />
+        <activity android:name=".MorePost.MorePost" />
+        <activity
+            android:name=".ChatRoom.ChatListActivity"
+            android:parentActivityName=".UserProfile.UserProfile" />
+        <activity
+            android:name=".ChatRoom.ChatActivity"
+            android:parentActivityName=".ChatRoom.ChatListActivity" />
+        <activity android:name=".More.MoreBids" />
+        <activity android:name=".More.MorePost" />
+        <activity android:name=".BooksCatagory.CollogeCatagory" />
+        <activity android:name=".BooksCatagory.OtherCatagory" />
+        <activity android:name=".BooksCatagory.BscCatagory" />
+        <activity android:name=".BooksCatagory.PoetryCatagory" />
+        <activity android:name=".BooksCatagory.NovelsCatagory" />
+        <activity android:name=".BooksCatagory.SchoolCatagory" />
+        <activity android:name=".BooksCatagory.IslamicCatagory" />
+        <activity android:name=".BooksCatagory.ManagementCatagory" />
+        <activity android:name=".BooksCatagory.CsCatagory" />
+        <activity android:name=".BooksCatagory.ReqDonationCatagory" />
+        <activity android:name=".BooksCatagory.DonateBookCatagory" />
+        <activity android:name=".BooksCatagory.ExchangeBookCatagory" />
+        <activity android:name=".BooksCatagory.SellBookCatagory" />
+        <activity
+            android:name=".RegisterBooks.RequestDonation"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterBooks.DonateBooks"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterBooks.ExchangeBooks"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterBooks.SellBook"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SpleshScreen"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterBooks.SellBooks"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".BooksCatagory.EngeneeringBooks" />
+        <activity
+            android:name=".UserProfile.UserProfile"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Registeration.LoginActivity" />
+        <activity android:name=".Registeration.RegisterDonater" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat" />
+    </application>
+
+</manifest>

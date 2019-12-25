@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_sell"
+        android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+        android:title="Sell Books" />
+
+
+
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_explicit_black_24dp"
+        android:title="Exchange Books" />
+    <item
+        android:id="@+id/request"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="Donate Books" />
+
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_note_add_black_24dp"
+        android:title="Req Donation" />
+
+</menu>
