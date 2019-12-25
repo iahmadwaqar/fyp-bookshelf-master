@@ -172,7 +172,6 @@ public class RegisterDonater extends AppCompatActivity {
 
                         mRef = FirebaseDatabase.getInstance().getReference(BaseUrl);
                         FirebaseUser user = mAuth.getCurrentUser();
-
                         mRef.child("DrugUser/" + userID).setValue(donatorInfo);
                         mRef.child("USERS").child(userID).setValue("USER");
                         UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()

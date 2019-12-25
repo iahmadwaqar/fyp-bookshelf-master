@@ -8,25 +8,12 @@
         android:title="Home" />
 
     <item
-        android:id="@+id/nav_sell"
-        android:icon="@drawable/ic_add_shopping_cart_black_24dp"
-        android:title="Sell Books" />
-
-
-
-    <item
-        android:id="@+id/nav_favorites"
-        android:icon="@drawable/ic_explicit_black_24dp"
-        android:title="Exchange Books" />
-    <item
-        android:id="@+id/request"
+        android:id="@+id/chat"
         android:icon="@drawable/ic_book_black_24dp"
-        android:title="Donate Books" />
-
-
+        android:title="Chat" />
     <item
-        android:id="@+id/nav_search"
+        android:id="@+id/appointment"
         android:icon="@drawable/ic_note_add_black_24dp"
-        android:title="Req Donation" />
+        android:title="Appointment" />
 
 </menu>
