@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">Drug Adiction</string>
+    <string name="app_name">Drug Addicts Counselling System</string>
 
     <string name="Open">open</string>
     <string name="Close">close</string>
-
 
 
     <string name="ok">ok</string>

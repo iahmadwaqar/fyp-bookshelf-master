@@ -27,6 +27,8 @@ public class UserProfile extends AppCompatActivity {
     private TextView donerLocation;
     private TextView donerCellNo;
     private TextView donerPEmail;
+    private TextView donorDiseases;
+    private TextView donorAge;
     FirebaseAuth mAuth;
     DatabaseReference mRef;
     String UserId;
@@ -61,6 +63,8 @@ public class UserProfile extends AppCompatActivity {
                 donerLocation.setText(donatorInfo.getDonatorLocation());
                 donerCellNo.setText(donatorInfo.getDonatorCell());
                 donerPEmail.setText(donatorInfo.getDonatorEmail());
+                donorDiseases.setText(donatorInfo.getDonatorDiseases());
+                donorAge.setText(donatorInfo.getDonatorAge());
 
 
 
@@ -86,6 +90,9 @@ public class UserProfile extends AppCompatActivity {
         donerPEmail = (TextView) findViewById(R.id.donerPEmail);
         donerLocation = (TextView) findViewById(R.id.donerLocation);
         donerCellNo = (TextView) findViewById(R.id.donerCellNo);
+        donorDiseases = (TextView) findViewById(R.id.donerDiseases);
+        donorAge = (TextView)findViewById(R.id.donerAge);
+
 
     }
 }

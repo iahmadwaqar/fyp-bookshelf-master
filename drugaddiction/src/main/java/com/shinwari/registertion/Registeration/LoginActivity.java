@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         RegisterUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,RegisterDonater.class);
+                Intent intent = new Intent(LoginActivity.this,SignUpMain.class);
                 startActivity(intent);
             }
         });

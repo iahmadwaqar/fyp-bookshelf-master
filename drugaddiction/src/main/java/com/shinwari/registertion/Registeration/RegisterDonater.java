@@ -44,6 +44,8 @@ public class RegisterDonater extends AppCompatActivity {
     private TextInputEditText regDonateremail;
     private TextInputEditText regDonaterpassword;
     private TextInputEditText regDonaterCell;
+    private TextInputEditText regDonaterAge;
+    private TextInputEditText regDonaterDiseases;
     private TextInputEditText regDonaterLocation;
     private Button doanterSubmmit;
     FirebaseAuth mAuth;
@@ -166,6 +168,8 @@ public class RegisterDonater extends AppCompatActivity {
                         donatorInfo.setDonatorName(regDonaterName.getText().toString());
                         donatorInfo.setDonatorLocation(regDonaterLocation.getText().toString());
                         donatorInfo.setDonatorCell(regDonaterCell.getText().toString());
+                        donatorInfo.setDonatorAge(regDonaterAge.getText().toString());
+                        donatorInfo.setDonatorDiseases(regDonaterDiseases.getText().toString());
                         donatorInfo.setDonatorImage(String.valueOf(downloadUri));
                         donatorInfo.setDonatorNoCount(1);
                         donatorInfo.setDonatorRatingSum(5);
@@ -221,6 +225,8 @@ public class RegisterDonater extends AppCompatActivity {
         regDonateremail = (TextInputEditText) findViewById(R.id.regDonateremail);
         regDonaterpassword = (TextInputEditText) findViewById(R.id.regDonaterpassword);
         regDonaterCell = (TextInputEditText) findViewById(R.id.regDonaterCell);
+        regDonaterAge = (TextInputEditText) findViewById(R.id.regDonaterAge);
+        regDonaterDiseases = (TextInputEditText) findViewById(R.id.regDonaterDiseases);
         regDonaterLocation = (TextInputEditText) findViewById(R.id.regDonaterLocation);
         doanterSubmmit = (Button) findViewById(R.id.doanterSubmmit);
         donerLoder = (ProgressBar) findViewById(R.id.donerLoder);
