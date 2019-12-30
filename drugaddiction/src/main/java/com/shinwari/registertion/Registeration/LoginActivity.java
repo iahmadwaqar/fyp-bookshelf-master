@@ -2,8 +2,12 @@ package com.shinwari.registertion.Registeration;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.textfield.TextInputEditText;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,7 +29,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.shinwari.registertion.Admin.AdminMain;
 import com.shinwari.registertion.MainActivity;
+import com.shinwari.registertion.Physicologest.PhysicoMain;
 import com.shinwari.registertion.R;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private TextInputEditText email;
@@ -45,6 +51,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+//        FirebaseAuth.getInstance().signOut();
+
         setTitle("Login");
 
         mAuth = FirebaseAuth.getInstance();
@@ -74,7 +82,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         RegisterUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,SignUpMain.class);
+                Intent intent = new Intent(LoginActivity.this,Main2Activity.class);
                 startActivity(intent);
             }
         });
@@ -91,6 +99,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if (TYPE != null && TYPE.equals("USER")) {
 
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    finish();
+                }
+                else if (TYPE != null && TYPE.equals("ADMIN")){
+                    startActivity(new Intent(LoginActivity.this, AdminMain.class));
+                    finish();
+                }
+                else if (TYPE != null && TYPE.equals("DOCTOR")){
+                    startActivity(new Intent(LoginActivity.this, PhysicoMain.class));
                     finish();
                 }
 

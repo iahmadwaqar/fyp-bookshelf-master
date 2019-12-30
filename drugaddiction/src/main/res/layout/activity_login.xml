@@ -27,16 +27,18 @@
 
     <FrameLayout
         android:id="@+id/loginView"
+        android:background="#C1F0A1"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@color/White">
+        android:layout_marginTop="20dp">
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
             android:gravity="center_vertical"
             android:orientation="vertical">
 
@@ -121,9 +123,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/button"
-
                 android:elevation="10dp"
-                android:text="Register "
+                android:text="Register As "
                 android:textColor="@android:color/white" />
 
 

@@ -14,6 +14,7 @@ public class DonatorInfo implements Serializable {
     String donatorAge;
     String donatorDiseases;
     String donatorLocation;
+    String donaterSpecilization;
     float donatorRatingSum;
     int donatorNoCount;
 
@@ -21,7 +22,7 @@ public class DonatorInfo implements Serializable {
     public DonatorInfo() {
     }
 
-    public DonatorInfo(String donatorName, String donatorEmail, String donatorImage, String donatorCell, String donatorAge, String donatorDiseases, String donatorLocation, float donatorRatingSum, int donatorNoCount) {
+    public DonatorInfo(String donatorName, String donatorEmail, String donatorImage, String donatorCell, String donatorAge, String donatorDiseases, String donatorLocation, String donaterSpecilization, float donatorRatingSum, int donatorNoCount) {
         this.donatorName = donatorName;
         this.donatorEmail = donatorEmail;
         this.donatorImage = donatorImage;
@@ -29,6 +30,7 @@ public class DonatorInfo implements Serializable {
         this.donatorAge = donatorAge;
         this.donatorDiseases = donatorDiseases;
         this.donatorLocation = donatorLocation;
+        this.donaterSpecilization = donaterSpecilization;
         this.donatorRatingSum = donatorRatingSum;
         this.donatorNoCount = donatorNoCount;
     }
@@ -87,6 +89,14 @@ public class DonatorInfo implements Serializable {
 
     public void setDonatorLocation(String donatorLocation) {
         this.donatorLocation = donatorLocation;
+    }
+
+    public String getDonaterSpecilization() {
+        return donaterSpecilization;
+    }
+
+    public void setDonaterSpecilization(String donaterSpecilization) {
+        this.donaterSpecilization = donaterSpecilization;
     }
 
     public float getDonatorRatingSum() {
